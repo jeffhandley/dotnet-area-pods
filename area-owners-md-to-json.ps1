@@ -1,4 +1,9 @@
-$markdownPath = $ARGS[0]
+$markdownPath = $ARGS[0] ?? "area-owners.md"
+
+if ((Test-Path $markdownPath) -eq $False) {
+    Write-Error "'$markdownPath' not found. Specify the path to the area-owners.md file if it is not in the current directory." -ErrorAction Stop
+}
+
 $markdownLines = Get-Content $markdownPath
 $teamCache = New-Object System.Collections.Generic.Dictionary"[String,String[]]"
 
