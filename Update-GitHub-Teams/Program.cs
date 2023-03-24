@@ -24,7 +24,7 @@ var content = File.ReadAllLines(csv);
 var members = content[0].Split(',');
 var areas = content[2..];
 
-var formerTeamMembers = new string[] { "maryamariyan", "Nick-Stanton" };
+var formerTeamMembers = new string[] { "dakersnar", "bartonjs", "smasher164" };
 var leads = new string[] { "ericstj", "jeffhandley" };
 
 foreach (var line in areas)

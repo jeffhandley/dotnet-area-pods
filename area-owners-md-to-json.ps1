@@ -7,13 +7,13 @@ if ((Test-Path $markdownPath) -eq $False) {
 $markdownLines = Get-Content $markdownPath
 $teamCache = New-Object System.Collections.Generic.Dictionary"[String,String[]]"
 
+# We need a map of the first alphabetical username to their pod
 $pods = @{
-    "adamsitnik"="adam-david-jeremy";
-    "bartonjs"="akhil-carlos-viktor";
+    "adamsitnik"="adam-david";
     "buyaa-n"="buyaa-steve";
-    "carlossanlop"="akhil-carlos-viktor";
+    "carlossanlop"="carlos-viktor";
     "eiriktsarpalis"="eirik-krzysztof-layomi-tarek";
-    "dakersnar"="drew-michael-tanner";
+    "michaelgsharp"="michael-tanner";
     "ericstj"="eric-jeff";
     "antonfirsov"="networking"
 }
